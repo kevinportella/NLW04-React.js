@@ -21,7 +21,7 @@ let countdownTimeout: NodeJS.Timeout;
 export function CountdownProvider({ children }: CountdonwProviderProps) {
   const { startNewChallenge } = useContext(ChallengesContexts);
 
-  const [time, setTime] = useState(0.05 * 60);
+  const [time, setTime] = useState(30 * 60);
   const [isActive, setIsActive] = useState(false);
   const [hasFineshed, setHasFineshed] = useState(false);
 
@@ -36,7 +36,7 @@ export function CountdownProvider({ children }: CountdonwProviderProps) {
     clearTimeout(countdownTimeout);
     setIsActive(false);
     setHasFineshed(false);
-    setTime(0.05 * 60);
+    setTime(30 * 60);
   }
 
   // CONTAGEM REGRESSIVA, MUITO UTIL, GUARDAR PRA SEMPRE!!!
