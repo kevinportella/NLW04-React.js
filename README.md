@@ -1,2 +1,4 @@
 # NLW04-React.js
-Aprendizado em React
+Aprendizado em React.
+Projeto ainda em desenvolvimento.
+
